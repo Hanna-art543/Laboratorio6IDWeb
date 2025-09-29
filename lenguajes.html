@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lenguajes</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="registro.html">Registro</a>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="preferencias">Escoge tus preferencias :</label>
+                <input type="checkbox" id="frontend" name="preferencias" value="frontend">
+                <label for="preferencias">Frontend</label>
+                <input type="checkbox" id="backend" name="preferencias" value="backend">
+                <label for="preferencias">Backend</label>
+                <input type="checkbox" id="fullstack" name="preferencias" value="fullstack">
+                <label for="preferencias">Fullstack</label>
+                <br><br>
+                <label for="foto">Sube tu foto de perfil: </label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <br><br>
+                <label for="lenguajes">¿Qué lenguajes conoces? </label>
+                <select id="lenguajes" name="lenguajes" multiple size="4">
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                    <option value="sql">SQL</option>
+                    <option value="c++">C++</option>
+                </select>
+                <br><br>
+                <label for="horas">¿Cuántas horas de programación estudias al día?</label>
+                <input type="number" id="horas" name="horas" min="0" max="24">
+                <br><br>
+                <input type="submit" value="Guardar">
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
